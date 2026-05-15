@@ -1,0 +1,20 @@
+{
+    "family_name":"Ogola",
+    "date_joined":"2024-05-16",
+    "number_of_people":2,
+    "visited_by_bishopric": false,
+    "family_data":[
+        {
+            "name":"Oweki Denis",
+            "gender":"male",
+            "birth_date":"2024-02-3"
+        },
+        {
+            "name":"Rwotomiyo Isiah",
+            "gender":"male",
+            "birth_date":"2024-02-3"
+
+        }
+    ]
+
+}
