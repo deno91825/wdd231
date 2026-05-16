@@ -9,10 +9,10 @@
     <meta name="description" content="Official website of the Mbale City Chamber of Commerce providing business resources, local events, networking opportunities, and a directory of businesses in Mbale, Uganda.">
 
     <!-- Open Graph (SEO + Social Sharing) -->
-    <meta property="og:title" content="Mbale City Chamber of Commerce" />
-    <meta property="og:description" content="Connecting businesses in Mbale City through events, networking, and economic development resources." />
-    <meta property="og:image" content="https://yourdomain.com/images/mbale-preview.jpg" />
-    <meta property="og:url" content="https://yourdomain.com/mbale-chamber/" />
+    <meta property="og:title" content="Mbale City Chamber of Commerce">
+    <meta property="og:description" content="Connecting businesses in Mbale City through events, networking, and economic development resources.">
+    <meta property="og:image" content="https://yourdomain.com/images/mbale-preview.jpg">
+    <meta property="og:url" content="https://yourdomain.com/mbale-chamber/">
 
     <!-- Title -->
     <title>Mbale City Chamber of Commerce</title>
@@ -21,13 +21,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Recommended font combo -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
-    <!-- Your Styles -->
+    <!-- Styles -->
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
@@ -38,8 +38,9 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
 </head>
+
 <body>
-     <header>
+    <header>
         <img src="images/logo.svg" alt="Site-Logo" width="512" height="512">
         <span>Mbale Chamber of Commerce</span>
         <button id="ham-btn" class="hamburger"></button>
@@ -55,12 +56,16 @@
     </nav>
 
     <main>
+        <!-- FIX: Added missing H1 -->
+        <h1>Mbale City Chamber of Commerce</h1>
+
         <div class="view-toggle">
             <button id="gridView">Grid View</button>
             <button id="listView">List View</button>
         </div>
 
-        <section id="cards"></section>
+        <!-- FIX: Added accessibility label -->
+        <section id="cards" aria-label="Company directory"></section>
     </main>
 
     <footer>
@@ -82,13 +87,12 @@
             </a>
         </div>
 
-        <h4>WDD231 Class Project</h4>
-        <p>Oweki Denis</p>
-        <p>
-            ©<span id="currentyear"></span>
-        </p>
+        <!-- FIX: heading order corrected -->
+        <h3>WDD231 Class Project</h3>
 
+        <p>Oweki Denis</p>
+        <p>©<span id="currentyear"></span></p>
         <p id="lastmodified"></p>
-    </footer>   
+    </footer>
 </body>
 </html>
