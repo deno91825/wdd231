@@ -1,0 +1,73 @@
+{"companies":[
+  {
+    "companyName": "Apple Inc.",
+    "address": "1 Apple Park Way, Cupertino, CA, USA",
+    "phone": "+1 408-996-1010",
+    "website": "https://www.apple.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+    "membershipLevel": 3,
+    "industry": "Technology",
+    "description": "Global technology company specializing in consumer electronics and software."
+  },
+  {
+    "companyName": "Microsoft Corporation",
+    "address": "1 Microsoft Way, Redmond, WA, USA",
+    "phone": "+1 425-882-8080",
+    "website": "https://www.microsoft.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
+    "membershipLevel": 3,
+    "industry": "Technology",
+    "description": "Leader in software, cloud computing, and enterprise services."
+  },
+  {
+    "companyName": "Amazon",
+    "address": "410 Terry Ave N, Seattle, WA, USA",
+    "phone": "+1 206-266-1000",
+    "website": "https://www.amazon.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+    "membershipLevel": 3,
+    "industry": "E-commerce / Cloud Computing",
+    "description": "Global e-commerce and cloud computing company (AWS)."
+  },
+  {
+    "companyName": "Google LLC",
+    "address": "1600 Amphitheatre Parkway, Mountain View, CA, USA",
+    "phone": "+1 650-253-0000",
+    "website": "https://www.google.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+    "membershipLevel": 3,
+    "industry": "Technology / Internet",
+    "description": "Search engine and AI-driven technology company."
+  },
+  {
+    "companyName": "Tesla Inc.",
+    "address": "1 Tesla Road, Austin, TX, USA",
+    "phone": "+1 512-516-8177",
+    "website": "https://www.tesla.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Tesla_Motors.svg",
+    "membershipLevel": 2,
+    "industry": "Automotive / Energy",
+    "description": "Electric vehicle and clean energy manufacturer."
+  },
+  {
+    "companyName": "Meta Platforms Inc.",
+    "address": "1 Hacker Way, Menlo Park, CA, USA",
+    "phone": "+1 650-543-4800",
+    "website": "https://www.meta.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Meta_Platforms_Inc._logo_%28cropped%29.svg",
+    "membershipLevel": 2,
+    "industry": "Social Media / Technology",
+    "description": "Social media and virtual reality technology company."
+  },
+  {
+    "companyName": "Nike Inc.",
+    "address": "1 Bowerman Dr, Beaverton, OR, USA",
+    "phone": "+1 503-671-6453",
+    "website": "https://www.nike.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg",
+    "membershipLevel": 1,
+    "industry": "Sportswear",
+    "description": "Global sportswear and athletic equipment brand."
+  }
+]
+}
