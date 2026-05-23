@@ -37,6 +37,7 @@
     <!-- Scripts -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 
 <body>
@@ -55,28 +56,42 @@
         </ul>
     </nav>
 
-    <!-- <main>
+    <main>
         <section id="hero">
-            <img src="images/hero.jpg" alt="Hero Image">
-            <button><a href="#">Become a Member</a></button>
+            <img src="images/hero.jpg" alt="Hero Image" width="1000" height="300">
+            <a id="btn" href="#">Become a Member</a>
         </section>
 
-        <section>
-            <div>
-                <h2>Events</h2>
-            </div>
-            <div>
-                <h2>Current Weather</h2>
-            </div>
-            <div>
-                <h2>Weather Forecast</h2>
-            </div>
-        </section>
+        <section class="layout">
 
-        <section>
+    <section class="box">
+        <h2>Events</h2>
 
-        </section>
-    </main> -->
+        <div class="content" id="events-content">
+            <!-- JS inserts content here -->
+        </div>
+    </section>
+
+    <section class="box" id="current-weather">
+    <h2>Current Weather</h2>
+
+    <div class="content">
+        <p id="temperature"></p>
+        <p id="description"></p>
+    </div>
+</section>
+
+<section class="box" id="weather-forecast">
+    <h2>Weather Forecast</h2>
+
+    <div class="content" id="forecast">
+    </div>
+</section>
+
+</section>
+
+<section id="spotlights"></section>
+    </main>
     
 
     <footer>

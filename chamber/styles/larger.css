@@ -17,15 +17,50 @@
          justify-content: space-around;
     }
 
-    section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+ 
+
+
+
+#hero{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+#hero img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* center button over image */
+#btn{
+    bottom: 40px;
+    left: 40px;
+
+    padding: 1rem 2rem;
+
+    font-size: 1.1rem;
+    border-radius: 14px;
+}
+  .layout{
+    grid-template-columns: 1.5fr 1fr 1fr;
+    align-items: start;
+}
+
+.box{
+    height: 100%;
+}
+
+.content{
+    min-height: 220px;
+}
+    #spotlights{
+        grid-template-columns: repeat(3, 1fr);
     }
-
-
-  #cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
 }

@@ -1,237 +1,394 @@
 :root {
-  --color-1: #04a91a;
-  --color-2: #04a943;
-  --color-3: #04aa6d;
-  --color-4: #04a996;
-  --color-5: #0493a9;
-}
+    /* Core brand */
+    --primary: #168f26;
+    --primary-dark: #076d2e;
 
-*{
-    font-family: "Josefin Sans", sans-serif;
-    box-sizing: border-box;
-}
+    /* Accent */
+    --accent: #f59e0b;
 
-header{
-    display: grid;
-    grid-template-columns: 24px auto 44px;
-    padding: 5px 0 5px 10px;
-    align-items: end;
-    border-bottom: var(--color-1);
-    column-gap: 8px;
-    background-color: var(--color-2);
-}
+    /* Neutrals */
+    --text: #111827;
+    --muted: #555;
+    --white: #ffffff;
+    --soft: #f3f6ff;
 
-header img{
-    display: block;
-    width: 100%;
-    height: auto;
-    padding-bottom:5px ;
-}
-
-header span{
-    font-size: 1.2rem;
-    color: #eee;
-}
-
-
-/*****************8Hamburger**************/
-.hamburger{
-    background: none;
-    border: none;
-    color: #3D405B;
-    cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.hamburger::after{
-    content:"\2630";
-    font-size: 2rem;
-}
-
-.hamburger.show::after{
-    content:"\00D7";
-    font-size: 2rem;
-
-}
-
-.navigation{
-    display:none;
-    background-color: var(--color-3);
-  
-}
-
-.navigation.show{
-    display: block;
-}
-
-.navigation ul{
-    list-style-type: none;
-     padding: 10px;
-
-}
-.navigation ul li{
-        text-align: center;
-         
-}
-.navigation ul a{
-    display: block;
-    color: #fff;
-    padding: 1rem;
-    text-decoration: none;
-
-}
-
-.navigation ul a:hover{
-    color: #111827;
-}
-
-.current{
-    color:#19191a ;
-}
-
-footer{
-    background-color: var(--color-1);
-    padding: 1rem 10px;
-    text-align: center;
-}
-
-.icons{
-    display: flex;
-    justify-content: center;
-    column-gap: 8px;
-}
-
-.icons a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border: var(--color-4);
-    border-radius: 22px;
-
-}
-.icons img{
-    width: 22px;
-    height: 22px;
-}
-.icons a:hover{
-    background-color: var(--color-5);
-}
-
-
-#cards {
-  display: grid;
-  grid-template-columns: 1fr; /* mobile default: 1 column */
-  gap: 1.5rem;
-  padding: 1rem;
-}
-
-
-
-
-#cards section {
-  background: var(--color-4);
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  text-align: center;
-}
-
-#cards section:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
-}
-
-
-#cards img {
-  width: 100%;
-  max-width: 160px;
-  height: auto;
-  object-fit: contain;
-  margin-bottom: 1rem;
-}
-
-
-
-#cards h2 {
-  font-size: 1.2rem;
-  margin: 0.5rem 0;
-  color: #111827;
+    --shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 /* =========================
-   TEXT
+   BASE
 ========================= */
 
-#cards p {
-  margin: 0.25rem 0;
-  font-size: 0.9rem;
-  color: #eee;
+* {
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
 }
 
+body {
+    margin: 0;
+    background: var(--soft);
+    color: var(--text);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: end;
+    padding: 5px 0 5px 10px;
+
+    background: var(--primary);
+    color: white;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+}
+
+/* =========================
+   NAV
+========================= */
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.hamburger::after {
+    content: "☰";
+    font-size: 2rem;
+}
+
+.hamburger.show::after {
+    content: "×";
+}
+
+.navigation {
+    display: none;
+    background: var(--primary-dark);
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: var(--accent);
+}
+
+/* =========================
+   HERO BUTTON
+*/
+
+#hero {
+    position: relative;
+    
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+#btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+    padding: 0.8rem 1.4rem;
+    background: var(--primary);
+    color: white;
+
+    border-radius: 10px;
+    text-decoration: none;
+
+    box-shadow: var(--shadow);
+}
+
+#btn:hover {
+    background: var(--primary-dark);
+}
+
+/* =========================
+   CARDS (DIRECTORY)
+ */
+
+#cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#cards section {
+    background: var(--white);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+
+    padding: 1rem;
+    text-align: center;
+}
+
+#cards img {
+    width: 160px;
+    height: auto;
+    object-fit: contain;
+}
+
+#cards p {
+    color: var(--muted);
+}
 
 #cards a {
-  margin-top: 0.8rem;
-  display: inline-block;
-  text-decoration: none;
-  background: var(--color-5);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-size: 0.85rem;
-  transition: background 0.2s ease;
+    display: inline-block;
+    margin-top: 0.8rem;
+
+    background: var(--primary);
+    color: white;
+
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
-#cards a:hover {
-  background: #f59e0b;
-  color: #111827;
-}
-
-#cards.list {
-  display: flex;
-  flex-direction: column;
-}
-
-/* List-style card layout */
-#cards.list section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: left;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-#cards.list img {
-  width: 80px;
-  height: auto;
-}
-
+/* =========================
+   VIEW TOGGLE
+ */
 
 .view-toggle {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
 }
 
 .view-toggle button {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 8px;
-  background: #1e3a8a;
-  color: white;
-  cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+
+    background: var(--primary);
+    color: white;
 }
 
+/* =========================
+   LAYOUT BOXES
+ */
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.box {
+    background: var(--white);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.box h2 {
+    margin: 0;
+    padding: 1rem;
+
+    background: var(--primary);
+    color: white;
+}
+
+.content {
+    padding: 1rem;
+}
+
+/* =========================
+   SPOTLIGHTS (FIXED & CLEAN)
+ */
+
+#spotlights {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.spotlight-card {
+    background: var(--white);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+
+    padding: 1.2rem;
+    text-align: center;
+
+    transition: 0.2s ease;
+}
+
+.spotlight-card:hover {
+    transform: translateY(-4px);
+}
+
+/* Logo */
+.spotlight-card img {
+    width: 80px;
+    height: 80px;
+
+    object-fit: contain;
+
+    background: var(--soft);
+    padding: 0.5rem;
+
+    border-radius: 12px;
+}
+
+/* Text */
+.spotlight-card h3 {
+    margin: 0.5rem 0;
+}
+
+.spotlight-card p {
+    color: var(--muted);
+}
+
+/* Button */
+.spotlight-card a {
+    display: inline-block;
+    margin-top: 0.7rem;
+
+    background: var(--primary);
+    color: white;
+
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+
+    text-decoration: none;
+}
+
+.spotlight-card a:hover {
+    background: var(--primary-dark);
+}
+
+/* Membership badge (clean version) */
+.spotlight-card strong {
+    display: inline-block;
+    margin-top: 0.5rem;
+
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+
+    background: var(--soft);
+    color: var(--text);
+}
+
+/* Gold override ONLY (JS should add class="gold") */
+.gold {
+    background: var(--accent);
+    color: black;
+}
+
+/* =========================
+   FOOTER
+ */
+
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.icons a {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#cards.list {
+    display: block;
+}
+
+#cards.list section {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #ddd;
+
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+
+    text-align: left;
+}
+
+/* Smaller image in list mode */
+#cards.list img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Text adjustments */
+#cards.list h2 {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+#cards.list p {
+    margin: 0.2rem 0;
+    font-size: 0.85rem;
+    color: #444;
+}
+
+/* Link becomes simple text */
+#cards.list a {
+    background: none;
+    padding: 0;
+    color: #1a73e8;
+    text-decoration: underline;
+    font-size: 0.85rem;
+}
+
+.view-toggle button {
+    transition: all 0.25s ease;
+    transform: translateY(0);
+}
 .view-toggle button:hover {
-  background: #f59e0b;
-  color: #111827;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    background: #0b63f6;
 }
