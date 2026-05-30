@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Author & Description -->
+    <meta name="author" content="Denis Oweki">
+    <meta name="description" content="Official Mbale City Chamber directory featuring local businesses, events, networking opportunities, and economic resources in Mbale, Uganda.">
+
+    <!-- Open Graph (SEO + Social Sharing) -->
+    <meta property="og:title" content="Mbale City Chamber of Commerce">
+    <meta property="og:description" content="Connecting businesses in Mbale City through events, networking, and economic development resources.">
+    <meta property="og:image" content="https://deno91825.github.io/wdd231/chamber/images/mbale-preview.jpg">
+    <meta property="og:url" content="https://yourdomain.com/mbale-chamber/">
+
+    <!-- Title -->
+   <title>Join | Mbale City Chamber of Commerce</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site-Logo" width="512" height="512">
+        <span>Mbale Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Chamber</a></li>
+            <li><a href="/finalproject/index.html">Final</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main class="join-page">
+        <h1>Join the Mbale Chamber of Commerce</h1>
+
+        <section class="join-container">
+
+            <form method="get" action="thankyou.html" class="join-form">
+
+                <label>
+                    First Name
+                    <input type="text" name="firstname" title="Applicant First Name"
+                        autocomplete="given-name" required>
+                </label>
+
+                <label>
+                    Last Name
+                    <input type="text" name="lastname" title="Applicant Last Name"
+                        autocomplete="family-name" required>
+                </label>
+
+                <label>
+                    Organizational Title
+                    <input type="text"
+                        name="organizationtitle"
+                        title="Organization Title"
+                        autocomplete="organization-title"
+                        pattern="[A-Za-z\s\-]{7,}"
+                        placeholder="Marketing Manager">
+                </label>
+
+                <label>
+                    Email Address
+                    <input type="email"
+                        name="email"
+                        title="Email Address"
+                        autocomplete="email"
+                        placeholder="example@email.com"
+                        required>
+                </label>
+
+                <label>
+                    Mobile Phone
+                    <input type="tel"
+                        name="phone"
+                        title="Mobile Phone Number"
+                        autocomplete="tel"
+                        required>
+                </label>
+
+                <label>
+                    Organization Name
+                    <input type="text"
+                        name="organization"
+                        title="Organization Name"
+                        autocomplete="organization"
+                        required>
+                </label>
+
+                <label>
+                    Membership Level
+                    <select name="membership" required>
+                        <option value="">Select Membership</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>
+                    Business Description
+                    <textarea name="description"
+                        title="Business Description"
+                        rows="5"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <input type="submit" value="Apply for Membership">
+            </form>
+
+            <section class="membership-cards">
+
+                <article class="membership-card card-animate">
+                    <h2>NP Membership</h2>
+                    <p>For Non-Profit Organizations</p>
+                    <a href="#" data-modal="npModal">Learn More</a>
+                </article>
+
+                <article class="membership-card card-animate">
+                    <h2>Bronze Membership</h2>
+                    <p>Starter Business Package</p>
+                    <a href="#" data-modal="bronzeModal">Learn More</a>
+                </article>
+
+                <article class="membership-card card-animate">
+                    <h2>Silver Membership</h2>
+                    <p>Growing Business Package</p>
+                    <a href="#" data-modal="silverModal">Learn More</a>
+                </article>
+
+                <article class="membership-card card-animate">
+                    <h2>Gold Membership</h2>
+                    <p>Premium Business Package</p>
+                    <a href="#" data-modal="goldModal">Learn More</a>
+                </article>
+
+            </section>
+
+        </section>
+
+        <dialog id="npModal">
+            <button class="close-modal">❌</button>
+            <h2>NP Membership</h2>
+            <ul>
+                <li>No membership fee</li>
+                <li>Community networking opportunities</li>
+                <li>Access to chamber announcements</li>
+            </ul>
+        </dialog>
+
+        <dialog id="bronzeModal">
+            <button class="close-modal">❌</button>
+            <h2>Bronze Membership</h2>
+            <ul>
+                <li>Business directory listing</li>
+                <li>Networking events</li>
+                <li>Training workshops</li>
+            </ul>
+        </dialog>
+
+        <dialog id="silverModal">
+            <button class="close-modal">❌</button>
+            <h2>Silver Membership</h2>
+            <ul>
+                <li>All Bronze benefits</li>
+                <li>Event discounts</li>
+                <li>Featured advertising opportunities</li>
+            </ul>
+        </dialog>
+
+        <dialog id="goldModal">
+            <button class="close-modal">❌</button>
+            <h2>Gold Membership</h2>
+            <ul>
+                <li>All Silver benefits</li>
+                <li>Homepage spotlight</li>
+                <li>VIP business promotion</li>
+                <li>Priority event sponsorship</li>
+            </ul>
+        </dialog>
+
+    </main>
+
+
+        
+
+    <footer>
+        <h2>Mbale Chamber of Commerce</h2>
+        <p>Mbale city, Majanga Rd.</p>
+        <a href="#">odenis2@byupathway.com</a>
+
+        <div class="icons">
+            <a href="https://github.com/deno91825" target="_blank">
+                <img src="images/github.svg" alt="Github" width="16" height="16">
+            </a>
+
+            <a href="https://www.linkedin.com/in/doctor-denis-deinstein-18874b3a9/?skipRedirect=true" target="_blank">
+                <img src="images/linkedin.svg" alt="linkedin" width="16" height="16">
+            </a>
+
+            <a href="https://wa.me/256787918190" target="_blank">
+                <img src="images/whatsapp.svg" alt="whatsapp" width="16" height="16">
+            </a>
+        </div>
+
+        <!-- FIX: heading order corrected -->
+        <h3>WDD231 Class Project</h3>
+
+        <p>Oweki Denis</p>
+        <p>©<span id="currentyear"></span></p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>
