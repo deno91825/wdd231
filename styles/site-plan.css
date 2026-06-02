@@ -1,0 +1,23 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F7F7FF;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #FF6B6B;
+}
+
+nav {
+    background-color: #4D96FF;
+    padding: 10px;
+}
+
+button {
+    background-color: #6BCB77;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
