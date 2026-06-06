@@ -1,0 +1,22 @@
+@media (min-width: 641px) and (max-width: 1024px) {
+
+  .card {
+    grid-template-areas:
+      "image title"
+      "image address"
+      "image description"
+      "image button";
+
+    grid-template-columns: 1fr 1.2fr;
+    align-items: start;
+  }
+
+    .card img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+}
