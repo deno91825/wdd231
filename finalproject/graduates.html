@@ -35,6 +35,7 @@
 
     <!-- Scripts -->
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/graduates.js" type="module" defer></script>
 </head>
 
 <body>
@@ -47,48 +48,43 @@
 
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="graduates.html">Graduates</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="graduates.html" class="active">Graduates</a></li>
             <li><a href="join.html">Form</a></li>
         </ul>
     </nav>
 
-    <main>
+<main>
+    <h1>Graduates</h1>
 
-        <h1>Home</h1>
+    <!-- CONTROLS -->
+    <section class="controls">
 
-        <!-- HERO SECTION -->
-        <section id="hero">
-            <img src="images/hero.webp" alt="Graduation celebration" width="1000" height="300">
-            <a id="btn" href="graduates.html">View Graduates</a>
-        </section>
+        <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Search by name...">
 
-        <!-- STATS / SUMMARY -->
-        <section class="layout">
+        <select id="levelFilter">
+            <option value="all">All Levels</option>
+            <option value="S4">S4</option>
+            <option value="S6">S6</option>
+        </select>
 
-            <section class="box">
-                <h2>About This Yearbook</h2>
-                <div class="content">
-                    <p>Celebrating S4 and S6 students from secondary schools across Uganda.</p>
-                </div>
-            </section>
+    </section>
 
-            <!-- <section class="box">
-                <h2>Statistics</h2>
-                <div class="content">
-                    <p id="total-graduates"></p>
-                    <p id="total-schools"></p>
-                </div>
-            </section> -->
+    <!-- GRID -->
+    <section id="graduates-container"></section>
 
-            <section class="box">
-                <h2>Featured Graduates</h2>
-                <div class="content" id="featured"></div>
-            </section>
+    <!-- MODAL -->
+    <dialog id="graduateModal">
+        <div class="modal-content">
+            <button id="closeModal">✕</button>
+            <div id="modalBody"></div>
+        </div>
+    </dialog>
+</main>
 
-        </section>
-
-    </main>
 
     <footer>
         <h2>Uganda Digital Yearbook</h2>

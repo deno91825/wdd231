@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Nankya",
+    "school": "Mbale Secondary School",
+    "district": "Mbale",
+    "level": "S6",
+    "career": "Doctor",
+    "quote": "Education is my key to changing lives.",
+    "photo": "images/student1.webp"
+  },
+  {
+    "id": 2,
+    "name": "David Okello",
+    "school": "Jinja College",
+    "district": "Jinja",
+    "level": "S4",
+    "career": "Software Engineer",
+    "quote": "I want to build solutions for Africa.",
+      "photo": "images/student2.webp"
+  },
+  {
+    "id": 3,
+    "name": "Amina Kato",
+    "school": "Kampala Secondary School",
+    "district": "Kampala",
+    "level": "S6",
+    "career": "Lawyer",
+    "quote": "Justice inspires everything I do.",
+    "photo": "images/student3.webp"
+  },
+  {
+    "id": 4,
+    "name": "Brian Ssemanda",
+    "school": "Gulu High School",
+    "district": "Gulu",
+    "level": "S4",
+    "career": "Pilot",
+    "quote": "The sky is only the beginning.",
+    "photo": "images/student4.webp"
+  },
+  {
+    "id": 5,
+    "name": "Grace Nakato",
+    "school": "Mbarara High School",
+    "district": "Mbarara",
+    "level": "S6",
+    "career": "Nurse",
+    "quote": "I want to care for people.",
+    "photo": "images/student5.webp"
+  },
+  {
+    "id": 6,
+    "name": "Joshua Lutaaya",
+    "school": "Mbale Secondary School",
+    "district": "Mbale",
+    "level": "S4",
+    "career": "Architect",
+    "quote": "I design the future.",
+    "photo": "images/student6.webp"
+  },
+  {
+    "id": 7,
+    "name": "Faith Namukasa",
+    "school": "Kampala Secondary School",
+    "district": "Kampala",
+    "level": "S6",
+    "career": "Teacher",
+    "quote": "Knowledge must be shared.",
+    "photo": "images/student7.webp"
+  },
+  {
+    "id": 8,
+    "name": "Peter Mugisha",
+    "school": "Jinja College",
+    "district": "Jinja",
+    "level": "S4",
+    "career": "Engineer",
+    "quote": "I solve real-world problems.",
+    "photo": "images/student8.webp"
+  },
+  {
+    "id": 9,
+    "name": "Sharon Atim",
+    "school": "Gulu High School",
+    "district": "Gulu",
+    "level": "S6",
+    "career": "Journalist",
+    "quote": "I will tell Africa's stories.",
+    "photo": "images/student9.webp"
+  },
+  {
+    "id": 10,
+    "name": "Kelvin Ouma",
+    "school": "Mbarara High School",
+    "district": "Mbarara",
+    "level": "S4",
+    "career": "Entrepreneur",
+    "quote": "I build businesses that solve problems.",
+    "photo": "images/student10.webp"
+  },
+  {
+    "id": 11,
+    "name": "Nadine Kizza",
+    "school": "Mbale Secondary School",
+    "district": "Mbale",
+    "level": "S6",
+    "career": "Pharmacist",
+    "quote": "Medicine saves lives.",
+    "photo": "images/student1.webp"
+  },
+  {
+    "id": 12,
+    "name": "Samuel Odongo",
+    "school": "Jinja College",
+    "district": "Jinja",
+    "level": "S4",
+    "career": "Data Analyst",
+    "quote": "Data tells powerful stories.",
+    "photo": "images/student2.webp"
+  },
+  {
+    "id": 13,
+    "name": "Lydia Nanyonga",
+    "school": "Kampala Secondary School",
+    "district": "Kampala",
+    "level": "S6",
+    "career": "Designer",
+    "quote": "Creativity shapes the world.",
+    "photo": "images/student3.webp"
+  },
+  {
+    "id": 14,
+    "name": "Isaac Wanyama",
+    "school": "Gulu High School",
+    "district": "Gulu",
+    "level": "S4",
+    "career": "Mechanic",
+    "quote": "I fix and improve machines.",
+    "photo": "images/student4.webp"
+  },
+  {
+    "id": 15,
+    "name": "Mercy Achieng",
+    "school": "Mbarara High School",
+    "district": "Mbarara",
+    "level": "S6",
+    "career": "Psychologist",
+    "quote": "I understand human behavior.",
+    "photo": "images/student5.webp"
+  },
+  {
+    "id": 16,
+    "name": "Martin Odoch",
+    "school": "Mbale Secondary School",
+    "district": "Mbale",
+    "level": "S4",
+    "career": "Developer",
+    "quote": "Code is my language.",
+    "photo": "images/student6.webp"
+  },
+  {
+    "id": 17,
+    "name": "Joan Namirembe",
+    "school": "Kampala Secondary School",
+    "district": "Kampala",
+    "level": "S6",
+    "career": "Economist",
+    "quote": "I study how economies grow.",
+    "photo": "images/student7.webp"
+  },
+  {
+    "id": 18,
+    "name": "Allan Byaruhanga",
+    "school": "Jinja College",
+    "district": "Jinja",
+    "level": "S4",
+    "career": "Electrician",
+    "quote": "I power systems safely.",
+    "photo": "images/student8.webp"
+  },
+  {
+    "id": 19,
+    "name": "Patricia Nanteza",
+    "school": "Gulu High School",
+    "district": "Gulu",
+    "level": "S6",
+    "career": "Chef",
+    "quote": "Food is creativity.",
+    "photo": "images/student9.webp"
+  },
+  {
+    "id": 20,
+    "name": "Henry Tumusiime",
+    "school": "Mbarara High School",
+    "district": "Mbarara",
+    "level": "S4",
+    "career": "Agronomist",
+    "quote": "I improve farming systems.",
+    "photo": "images/student10.webp"
+  }
+]

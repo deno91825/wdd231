@@ -1,0 +1,43 @@
+@media (min-width: 768px) {
+
+    /* NAV becomes horizontal */
+    nav ul {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        border: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /* layout becomes 3 columns */
+    .layout {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* hero button positioning tweak */
+    #btn {
+        font-size: 1.1rem;
+        padding: 1rem 1.5rem;
+    }
+
+        .controls {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #graduates-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+        .yearbook-form {
+        margin: 0;
+        border-radius: 0;
+    }
+}
